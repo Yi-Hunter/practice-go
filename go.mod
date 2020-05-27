@@ -1,4 +1,4 @@
-module github.com/Yi-Hunter/pratice-go
+module github.com/Yi-Hunter/practice-go
 
 go 1.14
 
