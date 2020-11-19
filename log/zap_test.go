@@ -4,7 +4,7 @@ import "testing"
 
 func TestInit(t *testing.T) {
 	zf := ZapConfig{
-		//LogFile:    "zap.log", // 不传就不写文件
+		//LogFile:    "log.log", // 不传就不写文件
 		LogLevel:   "debug",
 		MaxAge:     1,
 		MaxSize:    1,
@@ -13,7 +13,7 @@ func TestInit(t *testing.T) {
 		JsonFormat: false,
 	}
 	Init(zf)
-	Sugar.Info("zap log", "success", true, 1)
-	Sugar.Infof("zap log success %t %d", true, 1)
-	Sugar.Infow("zap log", "success", true)
+	Sugar.Info("log log", "success", true, 1)
+	Sugar.Infof("log log success %t %d", true, 1)
+	Sugar.Infow("log log", "success", true)
 }
